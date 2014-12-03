@@ -43,7 +43,10 @@
          <%= event.directions %>
         </td>
         <td>
-          <%= link_to 'Edit', edit_event_path(event)%>
+          <%= link_to 'Edit', edit_event_path(event) %>
+        </td>
+        <td>
+          <%= link_to 'Delete', event, method: :delete, data: {confirm: "Are You Sure?"}%>
         </td>
       </tr>
     <% end %>
